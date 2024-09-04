@@ -12,22 +12,22 @@ const Services_Data = [
     {
         s_no:"03",
         s_name:"Social media",
-        s_desc:"Web development is the process of building, programming..."
+        s_desc:"We offer comprehensive social media management services, creating impactful content, engaging with your audience, and boosting your brand's online presence."
     },
     {
         s_no:"04",
-        s_name:"App design",
-        s_desc:"Web development is the process of building, programming..."
+        s_name:"Paid Media",
+        s_desc:"Our paid media services drive targeted traffic through strategic ad placements on platforms like Google, Facebook, and Instagram, maximizing your ROI."
     },
     {
         s_no:"05",
         s_name:"Digital marketing",
-        s_desc:"Web development is the process of building, programming..."
+        s_desc:"Our digital marketing services enhance your online presence through SEO, social media, content marketing, and paid advertising to boost engagement and conversions."
     },
     {
         s_no:"06",
-        s_name:"Content writing",
-        s_desc:"Web development is the process of building, programming..."
+        s_name:"Influencer Marketing",
+        s_desc:"Our influencer marketing services connect your brand with the right influencers to amplify your message, build trust, and reach targeted audiences effectively."
     },
 ]
  
