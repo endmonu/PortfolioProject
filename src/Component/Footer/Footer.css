@@ -9,30 +9,32 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
   }
   
   .footer-top-left {
     flex: 1;
+    min-width: 280px;
   }
   
   .footer-top-left p {
-    font-size: 20px;
+    font-size: 18px;
     max-width: 400px;
   }
   
   .footer-top-right {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
     flex-wrap: wrap;
     justify-content: space-between;
+    min-width: 280px;
   }
   
   .footer-email-input {
     display: flex;
     gap: 10px;
-    padding: 10px 20px;
+    padding: 15px 20px;
     border-radius: 50px;
     background: #323238;
     width: 100%;
@@ -51,7 +53,7 @@
   
   .footer-subscribe {
     font-size: 18px;
-    padding: 15px 30px;
+    padding: 15px 25px;
     border-radius: 50px;
     background: linear-gradient(264deg, #df8908 -5.09%, #8415ff 106.28%);
     cursor: pointer;
@@ -63,8 +65,9 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    font-size: 18px;
+    font-size: 16px;
     align-items: center;
+    gap: 15px;
   }
   
   .footer-bottom-left {
@@ -100,6 +103,10 @@
       gap: 20px;
     }
   
+    .footer-top-left p {
+      font-size: 16px;
+    }
+  
     .footer-bottom {
       flex-direction: column-reverse;
       text-align: center;
@@ -110,6 +117,11 @@
       flex-direction: column;
       gap: 10px;
     }
+  
+    .footer-subscribe {
+      width: 100%;
+      padding: 12px 20px;
+    }
   }
   
   /* Media query for mobile screens */
@@ -119,25 +131,32 @@
     }
   
     .footer-top-left p {
-      font-size: 16px;
+      font-size: 14px;
     }
   
     .footer-email-input {
       flex-direction: column;
       gap: 10px;
+      padding: 10px 15px;
+    }
+  
+    .footer-email-input input {
+      font-size: 14px;
     }
   
     .footer-subscribe {
       width: 100%;
+      font-size: 16px;
     }
   
     .footer-bottom-right {
       flex-direction: column;
       gap: 10px;
+      align-items: center;
     }
   
     .footer-bottom-left {
-      font-size: 16px;
+      font-size: 14px;
     }
   }
   

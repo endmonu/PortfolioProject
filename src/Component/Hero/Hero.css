@@ -3,18 +3,20 @@
   align-items: center;
   flex-direction: column;
   gap: 35px;
+  padding: 20px; /* Added padding for better spacing on smaller screens */
 }
 
 .hero img {
-  margin-top: 50px;
-  border-radius: 0%;
-  width: 400px;
+  margin-top: 30px;
+  border-radius: 10%; /* Slight rounded corners for a softer look */
+  width: 80%; /* Responsive width to fit various screen sizes */
+  max-width: 400px; /* Limits the maximum width on larger screens */
 }
 
 .hero h1 {
   text-align: center;
-  width: 70%;
-  font-size: 60px;
+  width: 90%;
+  font-size: 48px;
   font-weight: 600;
 }
 
@@ -26,26 +28,33 @@
 }
 
 .hero p {
-  width: 50%;
+  width: 80%;
+  max-width: 500px;
   text-align: center;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .hero-action {
   display: flex;
+  flex-direction: column; /* Stacked buttons on mobile for better UX */
   align-items: center;
-  gap: 50px;
-  font-size: 20px;
+  gap: 20px;
+  font-size: 18px;
   margin-bottom: 50px;
 }
 
-.hero-connect {
-  padding: 25px 45px;
-  cursor: pointer;
+.hero-connect,
+.hero-resume {
+  padding: 15px 30px;
   border-radius: 50px;
-  background: linear-gradient(264deg, #df8908 -5.09%, #8415ff 100%);
+  cursor: pointer;
   transition: 0.5s;
+  font-size: 16px; /* Reduced font size for better fitting */
+}
+
+.hero-connect {
+  background: linear-gradient(264deg, #df8908 -5.09%, #8415ff 100%);
 }
 
 .hero-connect:hover {
@@ -54,55 +63,47 @@
 }
 
 .hero-resume {
-  padding: 25px 75px;
-  cursor: pointer;
-  border-radius: 50px;
   border: 2px solid #fff;
-  transition: 0.5s;
 }
 
-
-.hero-resume a
-{text-decoration: none;
-color: white;}
-
+.hero-resume a {
+  text-decoration: none;
+  color: white;
+}
 
 .hero-resume:hover {
   transform: scale(1.05);
   border-color: #8415ff;
-
 }
 
+/* Media queries for smaller devices */
+@media (max-width: 768px) {
+  .hero img {
+    margin-bottom: 10px;
+    width: 70%; /* Further adjusts image size on smaller screens */
+  }
 
+  .hero h1 {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 36px;
+    line-height: 1.2; /* Better line spacing for readability */
+  }
 
-@media(max-width: 768px){
-  .hero img{margin-bottom: 10px;
-        width: 260px;}
+  .hero p {
+    width: 90%;
+    font-size: 14px;
+    line-height: 22px;
+  }
 
-.hero h1{
-  margin-top: 50px;
-  width: 90%;
-  font-size: 50px;
-}
+  .hero-action {
+    gap: 10px;
+    margin-bottom: 30px;
+  }
 
-.hero p{
-  width: 60%;
-  font-size: 18px;
-
-}
-
-.hero-action{
-  gap: 16px;
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 50px;
-}
-
-
-.hero-connect{
-
-  padding: 20px;
-  border-radius: 40px;
-}
-
+  .hero-connect,
+  .hero-resume {
+    padding: 10px 20px;
+    font-size: 14px; /* Reduced button font size */
+  }
 }
