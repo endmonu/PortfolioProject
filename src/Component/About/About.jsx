@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
 import theme_pattern from "../../assets/theme_pattern.svg";
-import profile_img from "../../assets/MonuSharmap.jpeg";
+import profile_img from "../../assets/MonuSharma.jpg";
 
 // Skills array moved outside to keep the structure clean
 const skills = [
