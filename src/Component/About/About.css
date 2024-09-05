@@ -134,8 +134,8 @@
   }
 
   .about-title img {
-    width: 130px;
-    right: -20px;
+    width: 100px; /* Reduce size for smaller screens */
+    right: -10px; /* Adjust positioning as needed */
   }
 
   .about-sections {
@@ -175,7 +175,7 @@
   }
 
   .about-title img {
-    width: 100px;
+    width: 80px; /* Further reduce size for very small screens */
     right: -10px;
   }
 
